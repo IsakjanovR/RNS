@@ -1,0 +1,83 @@
+table {
+    border-collapse: collapse;
+}
+table th,
+table td {
+    padding: 0 15px;
+}
+table tr td:last-child {
+    text-align: right;
+}
+table tbody {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#window_show{
+    width:100%;
+    background:#fff;
+    z-index:1;
+    display: none;
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+select.qualification {
+    width: 100%;
+    box-shadow: 2px 2px 12px -3px #000000;
+    border: none;
+    border-radius: 5px;
+    height: 130px;
+}
+select.city {
+    width: 100%;
+    box-shadow: 2px 2px 12px -3px #000000;
+    border: none;
+    border-radius: 5px;
+    height: 130px;
+}
+.qualification>option {
+    margin: 10px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.47);
+    margin-left: 10%;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #757575;
+}
+.city>option {
+    margin: 10px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.47);
+    margin-left: 10%;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #757575;
+}
+.select_qual {
+    width: 45%;
+    display: inline-block;
+    float: left;
+}
+.select_city {
+    width: 45%;
+    float: left;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+input.button {
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    position: relative;
+    left: 40%;
+    border: none;
+    box-shadow: 1px 1px 11px brown;
+}
+
+#window_show>table {
+    margin: 0 auto;
+    color: #3c3c3c;
+    width: 70%;
+}
