@@ -83,7 +83,6 @@ include_once "function.php";
             } else {
                 echo "Пользователей в этом городе не найдено";
             }
-
         } elseif (isset($_POST['qualification'])) {
             foreach ($_POST['qualification'] as $value)
                 $in[] = $value . "\n";
