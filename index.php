@@ -64,7 +64,6 @@ include_once "function.php";
             foreach ($_POST['City'] as $value)
                 $in[] = $value . "\n";
             $result = mysqli_query($db, "SELECT * FROM `users` INNER JOIN `users_city` ON users_city.user_id = users.id AND users_city.city_id IN (" . implode(',', $in) . ") INNER JOIN city ON city.id = users_city.city_id INNER JOIN `qualification` ON qualification.id = users.qualification_id");
-            print_r($in);
             if (mysqli_num_rows($result) > 0) {
                 $arr = array();
                 while ($row = mysqli_fetch_array($result)) {
